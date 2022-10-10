@@ -47,11 +47,36 @@ def count_positive_numbers(numbers):
     return count
 
 # Szélsőérték keresés
+
 # Eldöntés
+# Írj egy függvényt is_all_positive(numbers), ami True-t ad vissza,
+    # ha a benne lévő összes pozitív
+def is_all_positive(numbers):
+    for number in numbers:
+        if number <= 0:
+            return False
+    return True
 
 # Még két nagyon elterjedt algoritmus
 # Szűrés
+# Írj egy get_all_positive_numbers(numbers) függvényt,
+    # egy új listába visszaadja az összes pozitív számot
+def get_all_positive_numbers(numbers):
+    result = []
+    for number in numbers:
+        if number > 0:
+            result.append(number)
+    return result
+
 # Transzformáció
+# Írj egy függvényt, ami double_values(numbers), ami visszaad
+    # egy új listát az eredeti listában lévő számok kétszeresével
+    # [1, 2, 3] -> [2, 4, 6]
+def double_values(numbers):
+    result = []
+    for number in numbers:
+        result.append(number * 2)
+    return result
 
 if __name__ == "__main__":
     numbers = [1, 2, 3, 1, 2, 3, 1, 2, 3]
