@@ -90,18 +90,16 @@ print(names.count("Jack Doe"))
 names.remove("Jack Doe")
 print(names)
 
-# Írj egy remove_all(item) függvényt, ami
-# a paraméterként átadott elem összes előfordulását törli
-    # Addig hívjunk remove-ot, amíg az elem benne van a listában
-# Írj egy sum(numbers) függvényt, ami a paraméterként
-    # átadott listában lévő egész számokat összegzi
-# Írj egy count_positive_numbers(numbers) függvényt, mely megszámolja,
-    # hogy hány pozitív szám van a listában
 # Keresd ki a legkisebb számot! (Használd a min beépített függvényt)
 # Írj egy függvényt is_all_positive(numbers), ami True-t ad vissza,
-    # ha a benne lévő összes szám egész
+    # ha a benne lévő összes pozitív
 # Írj egy get_all_positive_numbers(numbers) függvényt,
     # egy új listába visszaadja az összes pozitív számot
 # Írj egy függvényt, ami double_values(numbers), ami visszaad
     # egy új listát az eredeti listában lévő számok kétszeresével
     # [1, 2, 3] -> [2, 4, 6]
+
+print(type(5) is int)
+print(type("abc") is int)
+print(isinstance(5, int))
+print(isinstance("abc", int))
