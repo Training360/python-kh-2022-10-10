@@ -1,3 +1,4 @@
+from json import dumps
 from random import choice, randint
 
 
@@ -127,3 +128,5 @@ for i in range(0, 100):
 print(employees)
 print(employees[50]["name"])
 print(employees[50]["salary"])
+
+print(dumps(employees, indent=4))
