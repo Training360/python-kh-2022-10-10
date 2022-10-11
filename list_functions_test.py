@@ -44,3 +44,18 @@ def test_double_values():
     result = double_values(numbers)
     assert result == [2, 4, 6]
 
+def test_double_values_with_three_items():
+    numbers = [1, 2, 3]
+    result = double_values(numbers)
+    assert result == [2, 4, 6]
+
+def test_given_a_list_with_three_items_should_return_a_list_with_three_items_with_double_values():
+    numbers = [1, 2, 3]
+    result = double_values(numbers)
+    assert result == [2, 4, 6]
+
+
+def test_double_values_with_empty_list():
+    numbers = []
+    result = double_values(numbers)
+    assert result == []
