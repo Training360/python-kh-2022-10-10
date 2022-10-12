@@ -17,3 +17,7 @@ cur.execute("insert into employees(emp_name) values (?)", ("Jack Doe",))
 cur.execute("insert into employees(emp_name) values (?)", ("Jane Doe",))
 
 conn.commit()
+
+cur.execute("select id, emp_name from employees")
+for (id, name) in cur:
+    print(f"{id} - {name}")
