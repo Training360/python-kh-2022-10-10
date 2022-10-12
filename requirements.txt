@@ -2,3 +2,4 @@ pytest
 mypy
 selenium
 webdriver-manager
+mariadb
